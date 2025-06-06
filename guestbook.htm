@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guest Book</title>
+    <meta name="author" content="Frank Padovan">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="feedbackform.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="Media/Blue Springs.png" alt="Blue Springs Hotel Logo">
+        <h1>Guest Book</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.htm">Home</a>
+        <a href="acknowledge.htm">Acknowledgement</a>
+        <a href="cossack.htm">Cossack</a>
+        <a href="interest.htm">Interests</a>
+        <a href="activities.htm">Activities</a>
+        <a href="staff.htm">Staff</a>
+        <a href="guestbook.htm">Guest Book</a>
+    </nav>
+
+    <main>
+        <article>
+            <div class="guestbook-info">
+                <h2>Guest Book</h2>
+                <p> Welcome to the Guest Book. Here you will see how happy our customers are.</p>
+            </div>
+            <div class="guestbook-wrapper">
+                <img src="Media/Images/Guestbook/GuestbookLeft.jpg" alt="image" class="guestbook-side-image" />
+                <div class="guestbook-form-container">
+
+                    <form name="guestForm" onsubmit="return validateForm()" action="actionpage.php" method="post">
+                        <div>
+                            <label class="guestbook-feedback-message" for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                            <label id="firstName-error" class="guestbook-error-message"></label>
+                        </div>
+
+                        <div>
+                            <label class="guestbook-feedback-message" for="familyName">Family Name</label>
+                            <input type="text" id="familyName" name="familyName">
+                            <label id="familyName-error" class="guestbook-error-message"></label>
+                        </div>
+
+                        <div>
+                            <label class="guestbook-feedback-message" for="location">Country/City</label>
+                            <input type="text" id="location" name="location">
+                            <label id="location-error" class="guestbook-error-message"></label>
+                        </div>
+
+                        <div>
+                            <label class="guestbook-feedback-message" for="comment">Comment</label>
+                            <textarea id="comment" name="comment"></textarea>
+                            <label id="comment-error" class="guestbook-error-message"></label>
+                        </div>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+                <img src="Media/Images/Guestbook/GuestbookRight.jpg" alt="image" class="guestbook-side-image" />
+            </div>
+            <div class="guestbook-table-container">
+                <h2>
+                    Guest Reviews
+                </h2>
+                <p> Here are some reviews from our wonderful customers</p>
+                <table id="guestTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Family Name</th>
+                            <th>Country/City</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="populateFields(this)">
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Williams</td>
+                            <td>USA, Ulysses, New York</td>
+                            <td>Great food</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>2</td>
+                            <td>Amanda</td>
+                            <td>Suarez</td>
+                            <td>Spain, Oveido, Asturias</td>
+                            <td>Relaxing atmosphere</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
