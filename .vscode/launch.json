@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.htm",
-            "file": "c:\\Users\\fp85w\\Desktop\\BlueSpringsHotel\\index.htm"
+            "file": "C:\\Users\\fp85w\\Desktop\\GitHub Blue Springs Hotel Website\\Blue-Springs-Hotel-Website\\index.htm"
         }
     ]
 }

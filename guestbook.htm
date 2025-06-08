@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <img src="Media/Blue Springs.png" alt="Blue Springs Hotel Logo">
+        <img src="Media/Logo/Blue_Springs.png" alt="Blue Springs Hotel Logo">
         <h1>Guest Book</h1>
     </header>
 
@@ -23,17 +23,18 @@
         <a href="interest.htm">Interests</a>
         <a href="activities.htm">Activities</a>
         <a href="staff.htm">Staff</a>
-        <a href="guestbook.htm">Guest Book</a>
+        <a href="guestbook.htm" target="_blank">Guest Book</a>
     </nav>
 
     <main>
         <article>
             <div class="guestbook-info">
                 <h2>Guest Book</h2>
-                <p> Welcome to the Guest Book. Here you will see how happy our customers are.</p>
+                <p> Welcome to the Guest Book, where you can leave your feedback and see other guests reviews.</p>
             </div>
             <div class="guestbook-wrapper">
-                <img src="Media/Images/Guestbook/GuestbookLeft.jpg" alt="image" class="guestbook-side-image" />
+                <a href="https://www.karrathaiscalling.com.au/explore/cossack/" target="_blank"><img
+                        src="Media/Images/Guestbook/Guestbook_Left.jpg" alt="image" class="guestbook-side-image" /></a>
                 <div class="guestbook-form-container">
 
                     <form name="guestForm" onsubmit="return validateForm()" action="actionpage.php" method="post">
@@ -65,14 +66,15 @@
 
                     </form>
                 </div>
-                <img src="Media/Images/Guestbook/GuestbookRight.jpg" alt="image" class="guestbook-side-image" />
+                <a href="https://www.australiasnorthwest.com/blog/post/5-things-to-do-in-cossack/" target="_blank"><img
+                        src="Media/Images/Guestbook/Guestbook_Right.jpg" alt="image" class="guestbook-side-image" /></a>
             </div>
             <div class="guestbook-table-container">
                 <h2>
                     Guest Reviews
                 </h2>
                 <p> Here are some reviews from our wonderful customers</p>
-                <table id="guestTable">
+                <table class="guestbook-table">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -97,6 +99,63 @@
                             <td>Spain, Oveido, Asturias</td>
                             <td>Relaxing atmosphere</td>
                         </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>3</td>
+                            <td>Emily</td>
+                            <td>Nguyen</td>
+                            <td>Melbourne, Australia</td>
+                            <td>Loved the peaceful setting and friendly staff. Will be back!</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>4</td>
+                            <td>Daniel</td>
+                            <td>Martinez</td>
+                            <td>Toronto, Canada</td>
+                            <td>Amazing experience! Great fishing spots nearby.</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>5</td>
+                            <td>Akira</td>
+                            <td>Sato</td>
+                            <td>Tokyo, Japan</td>
+                            <td>Wonderful cultural insights and great food. Thank you!</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>6</td>
+                            <td>Sophia</td>
+                            <td>Brown</td>
+                            <td>New York, USA</td>
+                            <td>Very relaxing. The beach was the highlight of our stay.</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>7</td>
+                            <td>Fatima</td>
+                            <td>Ali</td>
+                            <td>Dubai, UAE</td>
+                            <td>Hospitality was top-notch. Clean rooms and delicious meals.</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>8</td>
+                            <td>Liam</td>
+                            <td>O’Connor</td>
+                            <td>Dublin, Ireland</td>
+                            <td>Boating activities were so much fun. Staff were super helpful.</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>9</td>
+                            <td>Hannah</td>
+                            <td>Müller</td>
+                            <td>Berlin, Germany</td>
+                            <td>Beautiful place with a calm atmosphere. Loved the art trail!</td>
+                        </tr>
+                        <tr onclick="populateFields(this)">
+                            <td>10</td>
+                            <td>Jacob</td>
+                            <td>Smith</td>
+                            <td>Perth, Australia</td>
+                            <td>Felt like home. Thank you for a great stay!</td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>

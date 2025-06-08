@@ -26,7 +26,7 @@ function validateForm() {
 
     // Validate location
     if (location === "") {
-        document.getElementById("location-error").textContent = "*Location is required";
+        document.getElementById("location-error").textContent = "*Country/City is required";
         isValid = false;
     }
 

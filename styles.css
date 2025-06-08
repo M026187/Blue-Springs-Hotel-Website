@@ -3,6 +3,10 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    color: black;
+}
+a {
+    color: #1db9e4;
 }
 
 h1 {
@@ -11,7 +15,6 @@ h1 {
 }
 
 h2 {
-    color: black;
     font-size: 2vw;
 }
 
@@ -43,9 +46,9 @@ nav.navbar {
 }
 
 nav.navbar a {
+    color: black;
     float: left;
     padding: 12px;
-    color: black;
     text-decoration: none;
     font-size: 1.2vw;
     font-weight: bold;
@@ -56,7 +59,7 @@ nav.navbar a {
 }
 
 nav.navbar a:hover {
-    background-color: rgb(0, 213, 255);
+    background-color: #1db9e4;
 }
 
 p {
@@ -89,7 +92,7 @@ ul {
 }
 
 .acknowledge-nav a:hover {
-    background-color: rgb(0, 213, 255);
+    background-color: #1db9e4;
 }
 
 .acknowledge-wrapper {
@@ -104,7 +107,7 @@ ul {
     height: auto;
     margin: auto;
     object-fit: cover;
-    border-radius: 100px;
+    border-radius: 5vw;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -160,15 +163,15 @@ ul {
     padding-bottom: 1vw;
 }
 
-.activity1-wrapper {
+.activity-block {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
 }
 
-.activity1-info {
-    width: 50vw;
+.activity-info {
+    width: 40vw;
     height: 25vw;
     padding: 20px;
     background-color: white;
@@ -177,157 +180,23 @@ ul {
     text-align: justify;
 }
 
-.activity1-image {
-    width: 50vw;
-    max-height: 25vw;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.activity1-info h2 {
+.activity-info h2 {
     font-size: 1.5vw;
     text-align: center;
 }
 
-.activity1-info p {
+.activity-info p {
+    text-align: center;
     font-size: 1vw;
-    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
-.activity2-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-}
-
-.activity2-info {
-    width: 50vw;
-    height: 25vw;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #ccc;
-    text-align: justify;
-}
-
-.activity2-info h2 {
-    font-size: 1.5vw;
-    text-align: center;
-}
-
-.activity2-info p {
-    font-size: 1vw;
-    text-align: center;
-}
-
-.activity2-image {
-    width: 50vw;
+.activity-image {
+    width: 60vw;
     max-height: 25vw;
     object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.activity3-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-}
-
-.activity3-info {
-    width: 50vw;
-    height: 25vw;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #ccc;
-    text-align: justify;
-}
-
-.activity3-info h2 {
-    font-size: 1.5vw;
-    text-align: center;
-}
-
-.activity3-info p {
-    font-size: 1vw;
-    text-align: center;
-}
-
-.activity3-image {
-    width: 50vw;
-    max-height: 25vw;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.activity4-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-}
-
-.activity4-info {
-    width: 50vw;
-    height: 25vw;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #ccc;
-    text-align: justify;
-}
-
-.activity4-info h2 {
-    font-size: 1.5vw;
-    text-align: center;
-}
-
-.activity4-info p {
-    font-size: 1vw;
-    text-align: center;
-}
-
-.activity4-image {
-    width: 50vw;
-    max-height: 25vw;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.activity5-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-}
-
-.activity5-info {
-    width: 50vw;
-    height: 25vw;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #ccc;
-    text-align: justify;
-}
-
-.activity5-info h2 {
-    font-size: 1.5vw;
-    text-align: center;
-}
-
-.activity5-info p {
-    font-size: 1vw;
-    text-align: center;
-}
-
-.activity5-image {
-    width: 50vw;
-    max-height: 25vw;
-    object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 0.5vw;
 }
 
 /*--------------------COSSACK--------------------*/
@@ -335,8 +204,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 1vw;
+    margin-bottom: 2vw;
     flex-wrap: nowrap;
 }
 
@@ -435,7 +304,6 @@ ul {
     border: solid;
     border-radius: 4vh;
     cursor: pointer;
-    color: black;
     padding: 2vh;
     margin-top: 2vh;
     font-size: 1vw;
@@ -443,7 +311,7 @@ ul {
 }
 
 .guestbook-form-container input[type=submit]:hover {
-    background-color: rgb(0, 213, 255);
+    background-color: #1db9e4;
 }
 
 .guestbook-form-container textarea {
@@ -461,17 +329,17 @@ ul {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 1vw;
+    margin-bottom: 2vw;
     flex-wrap: nowrap;
 }
 
 .guestbook-side-image {
     width: 35vw;
     height: auto;
-    margin: auto;
+    margin: 1vw;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 5vw;
 }
 
 .guestbook-table-container {
@@ -490,7 +358,6 @@ ul {
     padding-bottom: 1vw;
     margin: auto;
     width: 40vw;
-    border-radius: 10px;
     box-shadow: 0 0 5px #ccc;
     font-size: 1.5vw;
     text-align: center;
@@ -499,35 +366,39 @@ ul {
 .guestbook-table-container p {
     font-size: 1vw;
     padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
-.guestbook-table-container table {
-    width: auto;
+.guestbook-table {
+    width: 75vw;
     border-collapse: collapse;
-    margin-top: 30px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
 }
 
-.guestbook-table-container td {
+.guestbook-table thead {
+    background-color: #b2ebf2;
+    font-size: 1.5vw;
+}
+
+.guestbook-table th,
+.guestbook-table td {
     padding: 10px;
     border: 1px solid #ccc;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
     font-size: 1vw;
 }
 
-.guestbook-table-container th {
+.guestbook-table tbody tr:nth-child(even) {
     background-color: #e0f7fa;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-    font-size: 1vw;
-    font-weight: bold;
 }
 
-.guestbook-table-container tr:hover {
-    background-color: rgb(0, 213, 255);
-    cursor: pointer;
+.guestbook-table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.guestbook-table tbody tr:hover {
+    background-color: #1db9e4;
 }
 
 /*--------------------INTEREST--------------------*/
@@ -586,6 +457,42 @@ ul {
     font-size: 1.5vw;
 }
 
+.interest-things-to-do-table {
+    width: 75vw;
+    border-collapse: collapse;
+    margin: 1vw auto;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.interest-things-to-do-table iframe {
+    width: 15vw;
+    height: 15vw;
+}
+
+.interest-things-to-do-table thead {
+    background-color: #b2ebf2;
+    font-size: 1.5vw;
+}
+
+.interest-things-to-do-table th,
+.interest-things-to-do-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1vw;
+}
+
+.interest-things-to-do-table tbody tr:nth-child(even) {
+    background-color: #e0f7fa;
+}
+
+.interest-things-to-do-table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.interest-things-to-do-table tbody tr:hover {
+    background-color: #1db9e4;
+}
+
 .interest-internal-video {
     text-align: center;
     border-radius: 10px;
@@ -637,7 +544,7 @@ ul {
     max-width: 640px;
     border-radius: 12px;
     display: block;
-    margin: 1rem auto;
+    margin: 1vw auto;
 }
 
 .interest-external-video-link {
@@ -646,45 +553,11 @@ ul {
     aspect-ratio: 16 / 9;
     border-radius: 12px;
     display: block;
-    margin: 1rem auto;
+    margin: 1vw auto;
 }
 
-/*-----------------UPDATE NAMES---------------------*/
-.activities-table {
-    width: 75vw;
-    border-collapse: collapse;
-    margin: 1rem auto;
-    /* Center horizontally */
-}
-
-.activities-table iframe {
-    width: 15vw;
-    height: 15vw;
-}
-
-.activities-table thead {
-    background-color: #b2ebf2;
-    color: black;
-    font-size: 1.5vw;
-}
-
-.activities-table th,
-.activities-table td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 1vw;
-}
-
-.activities-table tbody tr:nth-child(even) {
-    background-color: #e0f7fa;
-}
-
-.activities-table tbody tr:nth-child(odd) {
-    background-color: white;
-}
-
-.activities-table tbody tr:hover {
-    background-color: #1db9e4;
+#interest-things-to-do-table-iframe {
+    text-align: center;
 }
 
 /*--------------------STAFF--------------------*/
@@ -707,7 +580,6 @@ ul {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    color: black;
     text-align: center;
     height: 20vw;
     width: 15vw;
@@ -748,7 +620,7 @@ ul {
 }
 
 .staff-box:hover {
-    background: rgb(0, 213, 255);
+    background: #1db9e4;
 }
 
 .staff-box img {
