@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* CSS for the canvas on which the popup will appear. Essentially it creates the canvas which is 
-        - the full size of the screen. zero pixels from the top, bottom, left and right
-        - is fixed so will not move regardless of scrolling
-        - Initially it is hidden so has no effect on the main page 
-        */
-
         .overlay {
             position: fixed;
             top: 0;
@@ -22,63 +16,56 @@
             left: 0;
             right: 0;
             visibility: hidden;
+            background-color: rgba(0, 0, 0, 0.6);
         }
-
-        /* When the overlay is targeted by the link on the main page it is made visible and blocks 
-        any action on the rest of the page as it becomes the most recently rendered item 
-        and sits over the top of everything */
 
         .overlay:target {
             visibility: visible;
         }
 
-        /* The popup has becomes visible as it is part of the overlay
-        The position relative is required for the close link to be positioned 
-        relative to the popup rather than the main page */
-
         .popup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             position: fixed;
             top: 50%;
             left: 50%;
-            width: 90%;
-            max-width: 400px;
+            width: 20vw;
             background: white;
-            border-radius: 10px;
-            padding: 20px;
+            border-radius: 1vw;
+            padding: 1vw;
             transform: translate(-50%, -50%);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             z-index: 999;
-            justify-items: center;
         }
 
         .popup h3 {
-            margin-top: 0;
             color: rgb(40, 40, 40);
             text-align: center;
             padding: 0.5vw;
+            font-size: 1.5vw;
         }
 
         .popup p {
-            margin-top: 0;
             color: rgb(109, 109, 109);
             padding: 0.5vw;
+            font-size: 1vw;
+            text-align: left;
         }
 
         .popup img {
             border-radius: 50%;
             object-fit: cover;
-            width: 100px;
-            height: 100px;
+            width: 8vw;
+            height: 8vw;
         }
-
-        /* The close link is positioned in the top right hand corner using absolute 
-        positioning relative to the popup */
 
         .popup .close {
             position: absolute;
             top: 10px;
             right: 20px;
-            font-size: 20px;
+            font-size: 1.5vw;
             font-weight: bold;
             text-decoration: none;
             color: rgb(77, 77, 77);
@@ -169,7 +156,8 @@
     <!-- Janice -->
     <div id="popup1" class="overlay">
         <div class="popup">
-            <a href="https://unsplash.com/photos/shallow-focus-photo-of-woman-in-gray-jacket-0Zx1bDv5BNY" target="_blank"><img src="Media/Images/Staff/Manager.jpg" alt="Janice O’Leahy"></a>
+            <a href="https://unsplash.com/photos/shallow-focus-photo-of-woman-in-gray-jacket-0Zx1bDv5BNY"
+                target="_blank"><img src="Media/Images/Staff/Manager.jpg" alt="Janice O’Leahy"></a>
             <h3>Janice O’Leahy</h3>
             <p><strong>Job Title:</strong> Manager</p>
             <p><strong>About:</strong> Janice brings 15 years of hospitality experience. She's dedicated to ensuring all
@@ -182,8 +170,10 @@
     <!-- Maurice -->
     <div id="popup2" class="overlay">
         <div class="popup">
-            <a href="https://unsplash.com/photos/a-man-in-a-suit-and-tie-posing-for-a-picture-mEyIWNECPQw" target="_blank"><img src="Media/Images/Staff/Concierge.jpg" alt="Maurice Smith"></a>
+            <a href="https://unsplash.com/photos/a-man-in-a-suit-and-tie-posing-for-a-picture-mEyIWNECPQw"
+                target="_blank"><img src="Media/Images/Staff/Concierge.jpg" alt="Maurice Smith"></a>
             <h3>Maurice Smith</h3>
+            <p><strong>Job Title:</strong> Concierge</p>
             <p><strong>About:</strong> Maurice is passionate about helping guests explore local attractions with ease
                 and style.</p>
             <p><strong>Can assist with:</strong> Local tours, transportation, and restaurant reservations.</p>
@@ -194,7 +184,8 @@
     <!-- Vera Petrova -->
     <div id="popup3" class="overlay">
         <div class="popup">
-            <a href="https://unsplash.com/photos/a-woman-in-a-business-suit-posing-for-a-picture-rlLnCS7jIQM" target="_blank"><img src="Media/Images/Staff/Activities_Coordinator.jpg" alt="Vera Petrova"></a>
+            <a href="https://unsplash.com/photos/a-woman-in-a-business-suit-posing-for-a-picture-rlLnCS7jIQM"
+                target="_blank"><img src="Media/Images/Staff/Activities_Coordinator.jpg" alt="Vera Petrova"></a>
             <h3>Vera Petrova</h3>
             <p><strong>Job Title:</strong> Activities Coordinator</p>
             <p><strong>About:</strong> Vera loves organizing fun and engaging experiences for guests of all ages.</p>
@@ -206,7 +197,8 @@
     <!-- Reginald Platt -->
     <div id="popup4" class="overlay">
         <div class="popup">
-            <a href="https://unsplash.com/photos/a-man-holding-a-glass-in-front-of-a-bar-GDw70s8sA4c" target="_blank"><img src="Media/Images/Staff/Bar_Manager.jpg" alt="Reginald Platt"></a>
+            <a href="https://unsplash.com/photos/a-man-holding-a-glass-in-front-of-a-bar-GDw70s8sA4c"
+                target="_blank"><img src="Media/Images/Staff/Bar_Manager.jpg" alt="Reginald Platt"></a>
             <h3>Reginald Platt</h3>
             <p><strong>Job Title:</strong> Bar Manager</p>
             <p><strong>About:</strong> Reginald is a mixology expert known for crafting exceptional cocktails and
@@ -219,7 +211,8 @@
     <!-- Alexis Garnier -->
     <div id="popup5" class="overlay">
         <div class="popup">
-            <a href="https://unsplash.com/photos/a-woman-cooking-in-a-kitchen-on-a-stove-X082LYNGJdE" target="_blank"><img src="Media/Images/Staff/Senior_Chef.jpg" alt="Alexis Garnier"></a>
+            <a href="https://unsplash.com/photos/a-woman-cooking-in-a-kitchen-on-a-stove-X082LYNGJdE"
+                target="_blank"><img src="Media/Images/Staff/Senior_Chef.jpg" alt="Alexis Garnier"></a>
             <h3>Alexis Garnier</h3>
             <p><strong>Job Title:</strong> Senior Chef</p>
             <p><strong>About:</strong> Alexis brings French culinary artistry to every dish, emphasizing fresh and

@@ -5,9 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "chrome",
             "request": "launch",
-            "name": "Open index.htm",
+            "type": "chrome",
+            "file": "C:\\Users\\fp85w\\Desktop\\GitHub Blue Springs Hotel Website\\Blue-Springs-Hotel-Website\\index.htm"
+        },
+        {
+            "name": "edge",
+            "request": "launch",
+            "type": "msedge",
+            "file": "C:\\Users\\fp85w\\Desktop\\GitHub Blue Springs Hotel Website\\Blue-Springs-Hotel-Website\\index.htm"
+        },
+        {
+            "name": "firefox",
+            "request": "launch",
+            "type": "firefox",
             "file": "C:\\Users\\fp85w\\Desktop\\GitHub Blue Springs Hotel Website\\Blue-Springs-Hotel-Website\\index.htm"
         }
     ]

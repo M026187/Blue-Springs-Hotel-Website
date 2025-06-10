@@ -39,9 +39,14 @@ function validateForm() {
     // Validate user has not input text containing "<"
     for (let field of fields) {
         if (field.toLowerCase().includes("<")) {
-            alert('User input contains forbidden code');
-            return false;
+            alert('User input contains forbidden code "<"');
+            isValid = false;
         }
+    }
+
+    // Display to user that the form has been submitted successfully
+    if (isValid == true) {
+        alert('Form submitted successfully');
     }
 
     return isValid;
